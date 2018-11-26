@@ -2,14 +2,12 @@
 # Para verificar la respuestas, puedes modificar los valores de a y b.
 
 a = 'verdadero'
-b = 'falso'
+b = 'verdadero'
 
 if a == 'verdadero'
     puts ':)'
-else
-  if b == 'verdadero'
+elsif b == 'verdadero'
     puts ':|'
-  else
+else
     puts ':('
-  end
 end
