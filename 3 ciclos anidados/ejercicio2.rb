@@ -24,3 +24,23 @@ Generar el código para imprimir la siguiente tabla:
   <tbody>
  </table>
 =end
+
+
+b =''
+b += "<table>\n"
+b += "  <tbody>\n"
+
+num = 1
+for i in 1..3
+  b += "    <tr>\n"
+  for i in 1..4
+    b += "     <td>#{num}</td>\n"
+    num = num + 1
+  end
+  b += "    </tr>\n"
+end
+
+b += "  </tbody>\n"
+b += " </table>"
+
+puts b
